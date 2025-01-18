@@ -1,0 +1,112 @@
+{
+    "mains": {
+        "Nord": [
+            "2h",
+            "2c",
+            "Jd",
+            "Kd",
+            "As",
+            "4h",
+            "Qd",
+            "10s",
+            "Qc",
+            "Ah",
+            "4d",
+            "9c",
+            "Js"
+        ],
+        "Sud": [
+            "3d",
+            "5h",
+            "Jc",
+            "4c",
+            "6h",
+            "6d",
+            "7d",
+            "4s",
+            "7c",
+            "5c",
+            "Kc",
+            "7s",
+            "Ac"
+        ],
+        "Est": [
+            "5s",
+            "6c",
+            "10h",
+            "10d",
+            "2d",
+            "Kh",
+            "3c",
+            "Qs",
+            "Ad",
+            "Ks",
+            "3h",
+            "8s",
+            "8d"
+        ],
+        "Ouest": [
+            "5d",
+            "2s",
+            "10c",
+            "Qh",
+            "9d",
+            "8h",
+            "3s",
+            "9h",
+            "9s",
+            "8c",
+            "Jh",
+            "7h",
+            "6s"
+        ]
+    },
+    "evaluations": {
+        "Nord": "Avec la main que vous avez d\u00e9crite, vous avez 12 points d'honneur (As : 4 points, Roi : 3 points, Dame : 2 points, Valet : 1 point). Vous avez une main \u00e9quilibr\u00e9e avec une distribution 3-4-4-2. Cependant, cette main est faible en termes de potentiel de jeu. \n\nSi personne n'a encore ench\u00e9ri avant vous, le mieux est peut-\u00eatre de passer, car la main n\u2019a pas suffisamment de points pour ouvrir \u00e0 un niveau de 1. Si c'est le cas, laissez d'autres joueurs en comp\u00e9tition et envisagez de soutenir ou de contrer selon les d\u00e9veloppements futurs du jeu.\n\nSi votre partenaire a d\u00e9j\u00e0 ouvert, basez votre ench\u00e8re sur son ouverture et le syst\u00e8me que vous utilisez pour soutenir. Par exemple, si votre partenaire a ouvert avec 1\u2663 ou 1\u2666, envisagez de r\u00e9pondre 1\u2665 pour montrer vos c\u0153urs, mais soyez prudent avec cette main modeste.",
+        "Sud": "Avec la main que vous avez d\u00e9crite, il semble que vous avez 13 cartes r\u00e9parties avec peu de points d'honneur (4 points d'honneur seulement : As de tr\u00e8fle et Roi de tr\u00e8fle). Vous n'avez pas de couleur longue et pas de bel appui pour une couleur majeure.\n\nDans une telle situation, il est souvent judicieux de passer. Vous n'avez pas les valeurs suffisantes pour ouvrir la main, et vos cartes ne soutiennent pas vraiment une ench\u00e8re agressive. Le mieux est donc de laisser votre partenaire, si possible, prendre l'initiative avec une main plus forte.",
+        "Est": "Avec cette main, vous avez un total de 11 points d'honneur (As=4, Roi=3, Dame=2, Valet=1) et une distribution assez \u00e9quilibr\u00e9e qui ne justifie pas d\u2019ouverture agressive. Votre meilleure option est probablement de passer, sauf si votre partenaire a ouvert avant vous. Si c'est le cas et qu'il a ouvert dans une couleur, trouvez un fit (au moins 3 cartes pour soutenir une majeure ou 5 cartes pour une mineure au niveau 1) pour soutenir, ou r\u00e9pondez 1SA si vous \u00eates dans la zone 6-9 points avec un soutien partiel.",
+        "Ouest": "Avec cette main, vous avez un total de 5 points avec une distribution assez \u00e9quilibr\u00e9e et aucune longue dans une couleur particuli\u00e8re. Votre main ne semble pas assez forte pour ouvrir au niveau d'un contrat. Je vous conseille de passer lors de l'ench\u00e8re initiale. Assurez-vous d'\u00eatre attentif aux ench\u00e8res de votre partenaire pour voir comment votre main pourrait compl\u00e9ter sa main."
+    },
+    "cartes_jouees": [
+        {
+            "joueur": "Nord",
+            "carte": "AH"
+        },
+        {
+            "joueur": "Sud",
+            "carte": "2D"
+        },
+        {
+            "joueur": "Est",
+            "carte": "KS"
+        },
+        {
+            "joueur": "Ouest",
+            "carte": "10C"
+        }
+    ],
+    "encheres": [
+        {
+            "joueur": "Nord",
+            "enchere": "1C"
+        },
+        {
+            "joueur": "Sud",
+            "enchere": "1D"
+        },
+        {
+            "joueur": "Est",
+            "enchere": "1H"
+        },
+        {
+            "joueur": "Ouest",
+            "enchere": "1S"
+        }
+    ],
+    "conseils": {
+        "Nord": "Nord joue Qh pour esperer prendre l'initiative si disponible.",
+        "Sud": "Nord: Joue 9c, pour essayer de pr\u00e9parer une s\u00e9quence en tr\u00e8fles.  \nSud: Joue 4s, pour explorer une autre couleur sans se compromettre.",
+        "Est": "Nord: 4\u2660, renforcer la couleur partenaire si Sud a ouvert avec 1\u2665.  \nSud: Passe, la main est faible pour une prise de risque.  \nEst: Passe, rien a ajouter en raison de la main modeste.  \nOuest: Passe, garder de l'atout partenaire secret.",
+        "Ouest": "Nord: Qd, essayer d'etablir les carreaux en jouant la dame.  \nSud: 4c, garder l'initiative et rester bas pour permettre a ses partenaires de couvrir.  \nEst: Kh, imposer le roi de coeur pour voir la reaction de l'adversaire.  \nOuest: 3s, jouer la carte faible pour garder les cartes plus fortes pour plus tard."
+    }
+}

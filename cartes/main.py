@@ -78,6 +78,7 @@ enregistrer_dans_historique("Est", "KS", "1H", main_est, evaluation_est)
 enregistrer_dans_historique("Ouest", "10C", "1S", main_ouest, evaluation_ouest)
 
 
+
 # Save the game history in a JSON file
 def sauvegarder_historique():
     with open("historique_jeu.json", "w", encoding='utf-8') as f:
@@ -107,3 +108,5 @@ for action in historique["cartes_jouees"]:
     conseil = conseil_tour_suivant([carte], encheres_actuelles)
 
     print(f"Conseil pour {joueur} avec la carte {carte} : {conseil}")
+
+

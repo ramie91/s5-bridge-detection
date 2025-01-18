@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage des Enchères</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enchères Détectées</h1>
+    <div id="enchereTable"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('enchere_data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('enchereTable');
+                const table = document.createElement('table');
+                let header = table.createTHead();
+                let headerRow = header.insertRow(0);
+                let headers = ["Phase", "Nord", "Est", "Sud", "Ouest"];
+                headers.forEach(text => {
+                    let cell = headerRow.insertCell();
+                    cell.outerHTML = `<th>${text}</th>`; // Ajouter des en-têtes au tableau
+                });
+
+                let tbody = table.createTBody();
+
+                data.enchere.forEach((item, index) => {
+                    let row = tbody.insertRow();
+                    let phaseCell = row.insertCell();
+                    phaseCell.innerHTML = `Phase ${index + 1}`;
+                    let northCell = row.insertCell();
+                    northCell.innerHTML = item.N;
+                    let eastCell = row.insertCell();
+                    eastCell.innerHTML = item.E;
+                    let southCell = row.insertCell();
+                    southCell.innerHTML = item.S;
+                    let westCell = row.insertCell();
+                    westCell.innerHTML = item.O;
+                });
+
+                // Ajouter une ligne pour l'enchère gagnante
+                let gagnanteRow = tbody.insertRow();
+                let gagnanteCell = gagnanteRow.insertCell();
+                gagnanteCell.colSpan = 5;
+                gagnanteCell.innerHTML = `<strong>Enchère gagnante:</strong> ${data['enchere gagnante']}`;
+
+                container.appendChild(table);
+            })
+            .catch(error => console.error('Erreur lors du chargement des données:', error));
+        });
+    </script>
+</body>
+</html>
