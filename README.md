@@ -71,10 +71,6 @@ project-root/
    ```bash
    cd s5-bridge-detection
    ```
-3. Installez les dépendances Python :
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Utilisation
 
